@@ -1,4 +1,5 @@
 1. Run: git clone --depth 1 https://github.com/andresriancho/w3af.git
+1.1: Make sure you have libxslt1-dev and libxml2-dev
 2. start w3af_api from your cloned dir
 3. Edit StartScan.py to hardcode site URL
 4. Wait a few seconds and run GetFullScanResults.py |less
