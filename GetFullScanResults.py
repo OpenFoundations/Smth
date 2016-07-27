@@ -1,9 +1,6 @@
 #!/usr/bin/python 
 
 from w3af_api_client import Connection, Scan
-import requests
-import re
-import inspect
 
 # Connect to the REST API and get it's version
 conn = Connection('http://127.0.0.1:5000/')
