@@ -8,7 +8,7 @@ print conn.get_version()
 
 # Define the target and configuration
 scan_profile = file('/home/alon/w3af/profiles/fast_scan.pw3af').read()
-target_urls = ['www.domain.com']
+target_urls = ['www.ynet.co.il']
 
 scan = Scan(conn)
 scan.start(scan_profile, target_urls)

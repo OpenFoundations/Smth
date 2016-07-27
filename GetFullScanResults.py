@@ -1,6 +1,6 @@
 #!/usr/bin/python 
 
-from w3af_api_client import Connection, Scan, traffic
+from w3af_api_client import Connection, Scan
 import requests
 import re
 import inspect
@@ -24,6 +24,6 @@ for scan in scans:
 				print "Response: ", real_data.response, "\n"
 		except:
 			print "No data, check manually the provided link"
-	break
+#	break
 
 		
