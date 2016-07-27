@@ -1,1 +1,9 @@
-# Smth
+1. Run: git clone --depth 1 https://github.com/andresriancho/w3af.git
+2. start w3af_api from your cloned dir
+3. Edit StartScan.py to hardcode site URL
+4. Wait a few seconds and run GetFullScanResults.py |less
+5. Read the code, the important part is:
+	 for key in vuln.resource_data:
+		print key, ": ", vuln.resource_data[key]
+	:-)
+
