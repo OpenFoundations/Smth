@@ -19,9 +19,9 @@ for scan in scans:
 			print key, ": ", vuln.resource_data[key]	
 		try:
 			traffic = vuln.get_traffic()
-			for real_data in (traffic):
-				print "Request: ", real_data.request, "\n"
-				print "Response: ", real_data.response, "\n"
+			for raw_data in (traffic):
+				print "Request: ", raw_data.request, "\n"
+				print "Response: ", raw_data.response, "\n"
 		except:
 			print "No data, check manually the provided link"
 #	break
