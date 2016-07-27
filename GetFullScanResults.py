@@ -14,14 +14,14 @@ print conn.get_version()
 scans = conn.get_scans()
 for scan in scans:
 #	print scan.get_urls()
-	for x in scan.get_findings():
-		for y in x.resource_data:
-			print y, ": ", x.resource_data[y]	
+	for vuln in scan.get_findings():
+		for key in vuln.resource_data:
+			print key, ": ", vuln.resource_data[key]	
 		try:
-			traffic = x.get_traffic()
-			for i in (traffic):
-				print "Request: ", i.response, "\n"
-				print "Response: ", i.request, "\n"
+			traffic = vuln.get_traffic()
+			for real_data in (traffic):
+				print "Request: ", real_data.request, "\n"
+				print "Response: ", real_data.response, "\n"
 		except:
 			print "No data, check manually the provided link"
 	break
