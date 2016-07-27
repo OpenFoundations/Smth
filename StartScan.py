@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from w3af_api_client import Connection, Scan
 
 # Connect to the REST API and get it's version

@@ -1,3 +1,5 @@
+#!/usr/bin/python 
+
 from w3af_api_client import Connection, Scan, traffic
 import requests
 import re
@@ -12,7 +14,6 @@ print conn.get_version()
 scans = conn.get_scans()
 for scan in scans:
 #	print scan.get_urls()
-	print scan.get_log()
 	for x in scan.get_findings():
 		for y in x.resource_data:
 			print y, ": ", x.resource_data[y]	
@@ -23,5 +24,6 @@ for scan in scans:
 				print "Response: ", i.request, "\n"
 		except:
 			print "No data, check manually the provided link"
+	break
 
 		
