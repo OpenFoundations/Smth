@@ -12,9 +12,8 @@ function getProfile() {
 	return data;
 };
 
-//	var profile = getProfile();
-   var profile = getProfile();
-   var json = {'scan_profile': profile,  
+var profile = getProfile();
+var json = {'scan_profile': profile,  
 	"target_urls": [Target]};
 var args = {
     'data': json ,
