@@ -16,9 +16,10 @@ function getProfile() {
    var profile = getProfile();
    var json = {'scan_profile': profile,  
 	"target_urls": [Target]};
-console.log(json);
 var args = {
     'data': json ,
     'headers': { "Content-Type": "application/json" }
 };
-client.post("http://localhost:5000/scans/", args, function (data, response) {});
+client.post("http://localhost:5000/scans/", args, function (data, response) {
+	console.log(data);
+});
