@@ -4,7 +4,9 @@ JS:
 
 2. Edit Target on each script
 
-3. run via node
+3. run w3af_api
+
+4. run via node
 
 ----------------------------------------------------------------------------------
 
