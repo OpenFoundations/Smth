@@ -1,3 +1,11 @@
+JS:
+1. Run: git clone --depth 1 https://github.com/andresriancho/w3af.git
+2. Edit Target on each script
+3. run via node
+
+
+Python:
+
 1. Run: git clone --depth 1 https://github.com/andresriancho/w3af.git
 
 1.1: Make sure you have libxslt1-dev and libxml2-dev
